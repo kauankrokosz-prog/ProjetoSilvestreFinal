@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../../test/flutter_application_1"
+		},
+		{
+			"path": "../../../urubudebota"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../urubudebota/castobudista"
+		},
+		{
+			"path": "../../Frutiger"
+		}
+	],
+	"settings": {
+		"pokemon-pets.background": "Sand"
+	}
+}

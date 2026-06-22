@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="trab1.css">
+
+
+</head>
+<div class="wow">
+
+    <div class="borto">
+        <img src="Frutiger/mort-ezgif.com-gif-maker.gif" alt="Gif centralizado">
+    </div>
+
+ 
+
+        <div class="navegacao">
+            <div class="imggif1">
+                <img src="rar.gif" alt="Descrição do GIF">
+            </div>
+            <div class="colunapesq">
+                <label for="pesquisa">🔍︎ </label>
+
+                <input name="kuoka" rows="50" cols="50" type="text" placeholder="Buscar por nome..." id="procurar"
+                    onkeyup="searchFunction()" />
+            </div>
+            <div class="imggif2">
+                <img src="picmix.com_1783283.gif" alt="Descrição do GIF">
+            </div>
+        </div>
+
+        <script>
+            function searchFunction() {
+                console.log("Olá, mundo!")
+
+
+
+                let input = document.getElementById("procurar");
+                let filter = input.value.toUpperCase();
+                let grid = document.querySelector(".ani");
+                let cards = grid.getElementsByClassName("produtoCard");
+                console.log(cards);
+
+
+                for (let i = 0; i < cards.length; i++) {
+                    let nomeItem = cards[i].querySelector(".tituloProduto");
+                    console.log(nomeItem);
+                    let txtValue = nomeItem.textContent || nomeItem.innerText;
+
+
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        cards[i].style.display = "";
+                    } else {
+                        cards[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+
+
+        <div class="secao1">
+            <div class="blocesq">
+
+                <h1>testando 2</h1>
+                <ul>
+                    <li> 1.Animais brutais </li>
+                    <li> 2.Animais mansos </li>
+                    <li> 3.Animais exoticos</li>
+                    <li>4.Animais da fauna brasileira</li>
+                    <li> 5.Animais de Matos Costa</li>
+                    <li>6.Animais BiZaRrRros</li>
+                </ul>
+
+
+            </div>
+            <div class="bloco2">
+                <div class="col1">
+                    <h1> Bem vindo </h1>
+                    <h2> Não há limites legais acerca do site apresentado. Não nos responsabilizamos pelas unidades de
+                        produtos apresentados.
+                        Servimos mercadorias, servimos sonhos, servimos desejos. As procedências dos métodos de caça das
+                        espécies também é vedada.
+                    </h2>
+
+                    <div class="container">
+                        <div class="ani">
+                            <a class="produtoCard" href="ani1.html" target="_blank">
+                                <img src="Frutiger\wombat_louco_por_tijolo.jpeg" alt="Bandicoot">
+                                <h1 class="tituloProduto">Wombat_comedor_de_tijolo_400R$</h1>
+                            </a>
+
+
+                            <a class="produtoCard" href="ani2.html" target="_blank">
+                                <img src="Frutiger\quokka_com_coque_samurai_prateado.jpeg" alt="Bandicoot">
+                                <h1 class="tituloProduto">Kuoka_Samurai_Prateado_200R$</h1>
+
+                            </a>
+
+
+
+                            <a class="produtoCard" href="ani3.html" target="_blank">
+                                <img src="Frutiger\c.bandicoot.jpeg" alt="Bandicoot">
+                                <h1 class="tituloProduto" style="margin: 0;">Bandicoot_mutante_100R$</h1>
+                            </a>
+
+
+
+
+                            <a class="produtoCard" href="ani4.html" target="_blank">
+                                <img src="Frutiger\bancdicoot.webp" alt="Bandicoot">
+                                <h1 class="tituloProduto" style="margin: 0;">Bandicoot_50R$</h1>
+                            </a>
+
+
+
+
+
+                            <a class="produtoCard" href="ani5.html" target="_blank">
+                                <img src="Frutiger\tatu_galinha_sinsistru.jpeg" alt="Bandicoot">
+                                <h1 class="tituloProduto" style="margin: 0;">Tatu_galinha_de_matos_costa_600$</h1>
+                            </a>
+
+
+
+
+                            <a class="produtoCard" href="ani6.html" target="_blank">
+                                <img src="Frutiger\tatu_galinha_bizarro.jpg" alt="Bandicoot">
+                                <h1 class="tituloProduto" style="margin: 0;">Tatu_galinha_100R$</h1>
+                            </a>
+
+
+
+
+                            <a class="produtoCard" href="ani7.html" target="_blank">
+                                <img src="Frutiger\264461016932.webp" alt="Bandicoot">
+                                <h1 class="tituloProduto" style="margin: 0;">Bivalve_monstruoso_500R$</h1>
+                            </a>
+
+
+
+
+                            <a class="produtoCard" href="ani8.html" target="_blank">
+                                <img src="Frutiger\hvSAsgpP_400x400.jpg" alt="Bandicoot">
+                                <h1 class="tituloProduto" style="margin: 0;">
+                                    Macaco_Chico_da_novela_caras_e_bocas(original)_1000R$</h1>
+                            </a>
+
+
+
+
+                            <a class="produtoCard" href="ani9.html" target="_blank">
+                                <img src="Frutiger\magoraa(1).jpg" alt="Bandicoot">
+                                <h1 class="tituloProduto" style="margin: 0;">Magora_5000R$</h1>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col2">
+                    <h1>Outras info ⛯</h1>
+                </div>
+            </div>
+
+            <table border="2px">
+
+                <div class="container">
+
+                </div>
+        </div>
+
+
+        </body>
+
+</html>
